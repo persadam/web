@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript" src="login.js"></script>
+	<title>Perhitungan Nilai Mahasiswa</title>
+</head>
+
+<body>
+    <p>
+
+    	<script language="javascript">
+
+window.alert("selamat datang");
+
+function jumlah()
+{
+    var bil1=parseFloat (document.fform.bilangan1.value);
+    if (isNaN(bil1))
+        bil1=0.0;
+    var bil2=parseFloat (document.fform.bilangan2.value);
+    if (isNaN(bil2))
+        bil2=0.0;
+    
+    var Nilai_Akhir=(((1*bil1) + (1*bil2) ))
+    alert("Jumlah Nilai = " + Nilai_Akhir);
+      
+        location.reload("ulang");
+
+        
+}
+</script>
+
+
+<div class="container">
+</p>
+<form NAME="fform">
+    <h1><br>Masukkan Nilai: </h1>
+    <pre>
+        Nilai A        :<input type="text" size="11" name="bilangan1">
+        Nilai B        :<input type="text" size="11" name="bilangan2">
+        
+    </pre>
+    <P>
+        <input type="button" value="Jumlahkan Disini" onclick="jumlah()">
+        <a href="login.html">Login</a>
+    </form>
+</div>
+
+
+</body>
+</html>
